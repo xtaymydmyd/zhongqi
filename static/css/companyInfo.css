@@ -55,6 +55,9 @@
     display: inline-block;
     min-height: 500px;
     float: right; }
+    .dynamicContainer .tabWrapContent .companyTabContainer {
+      width: 100%;
+      min-height: 500px; }
     .dynamicContainer .tabWrapContent .companyBaseInfo .companyBaseInfoTab {
       overflow: hidden; }
     .dynamicContainer .tabWrapContent .companyBaseInfo .companyTab {
@@ -181,6 +184,33 @@
             .dynamicContainer .tabWrapContent .companyBaseInfo .companyTabContainer .companyTabContent .clientWrap .clientList > img {
               height: 50px;
               max-width: 100%; }
+        .dynamicContainer .tabWrapContent .companyBaseInfo .companyTabContainer .companyTabContent .list {
+          color: #666666;
+          font-size: 14px;
+          position: relative;
+          overflow: hidden;
+          padding: 27px 0px 13px 16px;
+          border-bottom: 1px dashed #e6e6e6;
+          display: inline-block;
+          width: 100%; }
+          .dynamicContainer .tabWrapContent .companyBaseInfo .companyTabContainer .companyTabContent .list .listLeft {
+            width: calc(100% - 100px);
+            display: inline-block; }
+          .dynamicContainer .tabWrapContent .companyBaseInfo .companyTabContainer .companyTabContent .list .listRight {
+            display: inline-block;
+            float: right; }
+        .dynamicContainer .tabWrapContent .companyBaseInfo .companyTabContainer .companyTabContent .list:before {
+          content: "";
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          left: 0px;
+          top: 35px;
+          background: #b6b6b6; }
+        .dynamicContainer .tabWrapContent .companyBaseInfo .companyTabContainer .companyTabContent .list:hover {
+          cursor: pointer; }
+          .dynamicContainer .tabWrapContent .companyBaseInfo .companyTabContainer .companyTabContent .list:hover .listLeft {
+            color: #cc0715; }
     .dynamicContainer .tabWrapContent .orgInfo {
       padding: 80px 20px;
       background: white;

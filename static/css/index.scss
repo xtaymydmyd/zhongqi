@@ -177,6 +177,9 @@
         }
         .technologyContainerList{
             .list{
+                display: inline-block;
+                width: 100%;
+                color: #333;
                 cursor:pointer;
                 position:relative;
                 padding-left:12px;
@@ -200,6 +203,9 @@
                 top: 8px;
                 border-radius:50%;
                 background:#b6b6b6;
+            }
+            .list:hover{
+                color:#cc0715;
             }
         }
     }

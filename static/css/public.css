@@ -227,6 +227,8 @@ html {
     opacity: 1; }
     .menuContainer .menu-nav-frame .menu-nav-frame-line:hover .menu-nav-frame-line-center .menu-nav-frame-line-center-wrap {
       border-bottom: 1px solid #efefef; }
+    .menuContainer .menu-nav-frame .menu-nav-frame-line:hover .menu-nav-frame-line-center .menu-nav-frame-line-center-wrap:last-child {
+      border-bottom: 0px; }
     .menuContainer .menu-nav-frame .menu-nav-frame-line:hover .menu-nav-frame-line-center .menu-nav-frame-line-a {
       display: inline-block;
       width: 100%;

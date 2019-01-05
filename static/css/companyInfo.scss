@@ -64,6 +64,10 @@
         min-height: 500px;
         // padding: 18px 50px 45px 50px;
         float: right;
+        .companyTabContainer{
+            width:100%;
+            min-height:500px;
+        }
         .companyBaseInfo{
             .companyBaseInfoTab{
                 overflow:hidden;
@@ -225,6 +229,39 @@
                                 max-width:100%;
                             }
 
+                        }
+                    }
+                    .list{
+                        color: #666666;
+                        font-size:14px;
+                        position:relative;
+                        overflow:hidden;
+                        padding:27px 0px 13px 16px;
+                        border-bottom: 1px dashed #e6e6e6;
+                        display:inline-block;
+                        width:100%;
+                        .listLeft{
+                            width: calc(100% - 100px);
+                            display: inline-block;
+                        }
+                        .listRight{
+                            display:inline-block;
+                            float:right;
+                        }
+                    }
+                    .list:before{
+                        content : "";
+                        position:absolute;
+                        width:5px;
+                        height:5px;
+                        left: 0px;
+                        top: 35px;
+                        background : #b6b6b6;
+                    }
+                    .list:hover{
+                        cursor:pointer;
+                        .listLeft{
+                            color:#cc0715;
                         }
                     }
                 }

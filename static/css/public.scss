@@ -282,6 +282,9 @@ html {
             .menu-nav-frame-line-center-wrap{
                 border-bottom:1px solid #efefef;
             }
+            .menu-nav-frame-line-center-wrap:last-child{
+                border-bottom:0px;
+            }
             .menu-nav-frame-line-a{
                 display:inline-block;
                 width:100%;

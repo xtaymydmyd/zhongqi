@@ -6,6 +6,12 @@
 	<meta name="Author" content="">
     <meta name="Description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="resources/art/es5-sham.min.js"></script>
+    <script src="resources/art/es5-shim.min.js"></script>
+    <script src="resources/art/json3.min.js"></script>
+    <script src="resources/art/template-web.js"></script>
+
     <!-- 插件 -->
     <script src="resources/jquery/jquery.min.js"></script>
     
@@ -233,7 +239,8 @@
                 <div class="bigTitle">科技动态</div>
                 <div class="smallTitle">TECHNOLOGY NEWS</div>
             </div>
-            <div class="technologyContainer">
+            <div class="technologyContainer" id="technologyContainer"></div>
+            <!-- <div class="technologyContainer">
                 <div class="technologyContainerWrap">
                     <div class="technologyContainerTitle">
                         <div class="titleLeft">科技项目动态</div>
@@ -330,7 +337,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- 咨询专家 -->
@@ -443,6 +450,28 @@
     </div>
     <div class="container-fluid footerRight">Copyright © 2010-现在 江苏中企科技服务有限公司&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;苏ICP备12340894号-2</div>
     
+
+    <script id="content" type="text/html">
+        {{each data l i}}
+        <div class="technologyContainerWrap">
+            <div class="technologyContainerTitle">
+                <div class="titleLeft">{{l.name}}</div>
+                <a class="titleRight" href="dynamic.html?type={{l.id}}">更多</a>
+            </div>
+            <div class="technologyContainerList">
+                {{each l.list item j}}
+                    {{if j < 5}}
+                    <a class="list" href="detail.html?type={{l.id}}&id={{item.id}}">
+                        <div class="left text-ellipsis">{{item.data.name}}</div>
+                        <div class="right">{{item.data.applyTime}}</div>
+                    </a>
+                    {{/if}}
+                {{/each}}
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
     <script src="static/js/index.js"></script>
 </body>
 </html>

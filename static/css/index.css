@@ -143,6 +143,9 @@
     .technologyNews .technologyWrap .technologyContainer .technologyContainerWrap:nth-child(3n + 0) {
       margin-right: 0px; }
   .technologyNews .technologyWrap .technologyContainerList .list {
+    display: inline-block;
+    width: 100%;
+    color: #333;
     cursor: pointer;
     position: relative;
     padding-left: 12px;
@@ -163,6 +166,8 @@
     top: 8px;
     border-radius: 50%;
     background: #b6b6b6; }
+  .technologyNews .technologyWrap .technologyContainerList .list:hover {
+    color: #cc0715; }
 
 .consultExpert {
   padding-bottom: 70px; }
