@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Generator" content="EditPlus?">
+	<meta name="Author" content="">
+    <meta name="Description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 插件 -->
+    <script src="resources/jquery/jquery.min.js"></script>
+    
+    <script src="resources/swiper/swiper.jquery.min.js"></script>
+    <script src="resources/swiper/swiper.min.js"></script>
+    <link href="resources/swiper/swiper.min.css" rel="stylesheet">
+
+    <script src="resources/bootstrap/js/bootstrap.min.js"></script>
+    <link href="resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="static/css/public.css" rel="stylesheet">
+    <link href="static/css/index.css" rel="stylesheet">
+    <title>中企</title>
+</head>
+<body>
+    <!-- logo 、菜单 、联系电话 -->
+    <div class="container headWrap">
+        <div class="logoContainer">
+            <img src="static/image/logo.png" alt="">
+        </div>
+        <div class="menuContainer">
+            <div class="menu-nav">
+                <div class="menu-nav-frame clearfix">
+                    <div class="menu-nav-container">
+                        <div class="menu-nav-frame-line active" tabindex="-1">
+                            <a class="menu-nav-frame-line-a" href="index.html" style="text-decoration: none;">首页</a>
+                            
+                            <div class="menu-nav-frame-line-focus" tabindex="-1"></div>
+                        </div>
+                        <div class="menu-nav-frame-line" tabindex="-1">
+                            <a class="menu-nav-frame-line-a" href="companyInfo.html" style="text-decoration: none;">中企概况</a>
+                            <div class="menu-nav-frame-line-focus" tabindex="-1"></div>
+                            <div class="menu-nav-frame-line-center">
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="companyInfo.html?type=d1">公司简介</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="companyInfo.html?type=d2">分支机构</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="companyInfo.html?type=d3">公司招聘</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-nav-frame-line" tabindex="-1">
+                            <a class="menu-nav-frame-line-a" href="dynamic.html" style="text-decoration: none;">科技动态</a>
+                            <div class="menu-nav-frame-line-center">
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="dynamic.html?type=d1">科技项目动态</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="dynamic.html?type=d2">人才项目动态</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="dynamic.html?type=d3">其它项目动态</a>
+                                </div>
+                            </div>
+                            <div class="menu-nav-frame-line-focus" tabindex="-1"></div>
+                        </div>
+                        <div class="menu-nav-frame-line" tabindex="-1">
+                            <a class="menu-nav-frame-line-a" href="serve.html" style="text-decoration: none;">服务业务</a>
+                            <div class="menu-nav-frame-line-center">
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="serve.html?type=s1">资质服务</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="serve.html?type=s2">知识产权服务</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="serve.html?type=s3">资助服务</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="serve.html?type=s4">人才认定服务</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="serve.html?type=s5">产学研服务</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="serve.html?type=s6">咨询服务</a>
+                                </div>
+                            </div>
+                            <div class="menu-nav-frame-line-focus" tabindex="-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="phoneWrap">
+            <img src="static/image/call_icon.png" class="phoneIcon" alt="">
+            <span class="phoneText">025-85730005</span>
+        </div>
+    </div>
+    <!-- 轮播图 -->
+    <div class="swiper-content" id="swiper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="static/image/banner/banner.png" class="swiper-slide-img" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/image/banner/banner2.png" class="swiper-slide-img" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/image/banner/banner3.png" class="swiper-slide-img" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- 我们的服务 -->
+    <div class="container-fluid bgGray IndexOurService">
+        <div class="serviceWrap container">
+            <div class="titleWrap">
+                <div class="bigTitle">我们的服务</div>
+                <div class="smallTitle">OUR  SERVIERS</div>
+            </div>
+            <div class=" serviceContainer">
+                <a class="wrap" href="serve.html?type=s1">
+                    <div class="serviceBlock" >
+                        <img src="static/image/indexService/1.png" alt="知识产权服务" class="serviceBlockImg">
+                        <div class="serviceBlockTitle1">资质服务</div>
+                    </div>
+                    <div class="serviceBlockFirst">
+                        <div class="serviceBlockTitle">资质服务</div>
+                        <div class="serviceBlockContent">
+                            <div>国家高企认定</div>
+                            <div>双软企业认定</div>
+                            <div>体系认证</div>
+                            <div>科小民营认证</div>
+                            <div>其它资质认证</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="wrap" href="serve.html?type=s1">
+                    <div class="serviceBlock">
+                        <img src="static/image/indexService/1.png" alt="知识产权服务" class="serviceBlockImg">
+                        <div class="serviceBlockTitle1">知识产权服务</div>
+                    </div>
+                    <div class="serviceBlockFirst">
+                        <div class="serviceBlockTitle">知识产权服务</div>
+                        <div class="serviceBlockContent">
+                            <div>专利代理服务</div>
+                            <div>商标代理服务</div>
+                            <div>版权代理服务</div>
+                            <div>挖掘推广服务</div>
+                            <div>其他代理服务</div>
+                        </div>
+                    </div>
+                </a>
+                <a class="wrap">
+                    <div class="serviceBlock">
+                        <img src="static/image/indexService/2.png" alt="资助服务" class="serviceBlockImg">
+                        <div class="serviceBlockTitle1">资助服务</div>
+                    </div>
+                    <div class="serviceBlockFirst">
+                        <div class="serviceBlockTitle">资助服务</div>
+                        <div class="serviceBlockContent">
+                            <div>科技部门资助服务</div>
+                            <div>发改部门资助服务</div>
+                            <div>经信部门资助服务</div>
+                            <div>国家各类基金服务</div>
+                            <div>国家各类奖项服务</div>
+                        </div>
+                    </div>
+                </a>
+                
+                <a class="wrap">
+                    <div class="serviceBlock">
+                        <img src="static/image/indexService/3.png" alt="人才认定服务" class="serviceBlockImg">
+                        <div class="serviceBlockTitle1">人才认定服务</div>
+                    </div>
+                    <div class="serviceBlockFirst">
+                        <div class="serviceBlockTitle">人才认定服务</div>
+                        <div class="serviceBlockContent">
+                            <div>千人计划</div>
+                            <div>双创计划</div>
+                            <div>创业南京</div>
+                            <div>金山英才</div>
+                            <div>福地英才</div>
+                            <div>其他人才项目服务</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="wrap">
+                    <div class="serviceBlock">
+                        <img src="static/image/indexService/4.png" alt="产学研服务" class="serviceBlockImg">
+                        <div class="serviceBlockTitle1">产学研服务</div>
+                    </div>
+                    <div class="serviceBlockFirst">
+                        <div class="serviceBlockTitle">产学研服务</div>
+                        <div class="serviceBlockContent">
+                            <div>产学研项目申报服务</div>
+                            <div>研发中心认定服务</div>
+                            <div>校企合作对接服务</div>
+                            <div>人才对接服务</div>
+                            <div>其他研发生产资源对接服务</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="wrap">
+                    <div class="serviceBlock">
+                        <img src="static/image/indexService/5.png" alt="咨询服务" class="serviceBlockImg">
+                        <div class="serviceBlockTitle1">咨询服务</div>
+                    </div>
+                    <div class="serviceBlockFirst">
+                        <div class="serviceBlockTitle">咨询服务</div>
+                        <div class="serviceBlockContent">
+                            <div>政策咨询服务</div>
+                            <div>战略咨询服务</div>
+                            <div>项目策划服务</div>
+                            <div>风投对接服务</div>
+                            <div>其他咨询服务</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 科技动态 -->
+    <div class="container-fluid bgWhite technologyNews">
+        <div class="technologyWrap container">
+            <div class="titleWrap">
+                <div class="bigTitle">科技动态</div>
+                <div class="smallTitle">TECHNOLOGY NEWS</div>
+            </div>
+            <div class="technologyContainer">
+                <div class="technologyContainerWrap">
+                    <div class="technologyContainerTitle">
+                        <div class="titleLeft">科技项目动态</div>
+                        <div class="titleRight">更多</div>
+                    </div>
+                    <div class="technologyContainerList">
+                        <div class="list">
+                            <div class="left text-ellipsis">12月28日截止，南京市市级工程研究中心申."12月28日截止，南京市市级工程研究中心申</div>
+                            <div class="right">2018-11-06</div>
+                        </div>
+                        <div class="list">
+                            <div class="left text-ellipsis">12月28日截止，南京市市级工程研究中心申."12月28日截止，南京市市级工程研究中心申</div>
+                            <div class="right">2018-11-06</div>
+                        </div>
+                        <div class="list">
+                            <div class="left text-ellipsis">12月28日截止，南京市市级工程研究中心申."12月28日截止，南京市市级工程研究中心申</div>
+                            <div class="right">2018-11-06</div>
+                        </div>
+                        <div class="list">
+                            <div class="left text-ellipsis">12月28日截止，南京市市级工程研究中心申."12月28日截止，南京市市级工程研究中心申</div>
+                            <div class="right">2018-11-06</div>
+                        </div>
+                        <div class="list">
+                            <div class="left text-ellipsis">12月28日截止，南京市市级工程研究中心申."12月28日截止，南京市市级工程研究中心申</div>
+                            <div class="right">2018-11-06</div>
+                        </div>
+                        <div class="list">
+                            <div class="left text-ellipsis">12月28日截止，南京市市级工程研究中心申."12月28日截止，南京市市级工程研究中心申</div>
+                            <div class="right">2018-11-06</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="technologyContainerWrap">
+                    <div class="technologyContainerTitle">
+                        <div class="titleLeft">人才项目动态</div>
+                        <div class="titleRight">更多</div>
+                    </div>
+                    <div class="technologyContainerList">
+                        <div class="list">
+                            <div class="left text-ellipsis">12月28日截止，南京市市级工程研究中心申."12月28日截止，南京市市级工程研究中心申</div>
+                            <div class="right">2018-11-06</div>
+                        </div>
+                        <div class="list">
+                            <div class="left text-ellipsis">12月28日截止，南京市市级工程研究中心申."12月28日截止，南京市市级工程研究中心申</div>
+                            <div class="right">2018-11-06</div>
+                        </div>
+                        <div class="list">
+                            <div class="left text-ellipsis">12月28日截止，南京市市级工程研究中心申."12月28日截止，南京市市级工程研究中心申</div>
+                            <div class="right">2018-11-06</div>
+                        </div>
+                        <div class="list">
+                            <div class="left text-ellipsis">12月28日截止，南京市市级工程研究中心申."12月28日截止，南京市市级工程研究中心申</div>
+                            <div class="right">2018-11-06</div>
+                        </div>
+                        <div class="list">
+                            <div class="left text-ellipsis">12月28日截止，南京市市级工程研究中心申."12月28日截止，南京市市级工程研究中心申</div>
+                            <div class="right">2018-11-06</div>
+                        </div>
+                        <div class="list">
+                            <div class="left text-ellipsis">12月28日截止，南京市市级工程研究中心申."12月28日截止，南京市市级工程研究中心申</div>
+                            <div class="right">2018-11-06</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="technologyContainerWrap">
+                    <div class="technologyContainerTitle">
+                        <div class="titleLeft">其它项目动态</div>
+                        <div class="titleRight">更多</div>
+                    </div>
+                    <div class="technologyContainerList">
+                        <div class="list">
+                            <div class="left text-ellipsis">12月28日截止，南京市市级工程研究中心申."12月28日截止，南京市市级工程研究中心申</div>
+                            <div class="right">2018-11-06</div>
+                        </div>
+                        <div class="list">
+                            <div class="left text-ellipsis">12月28日截止，南京市市级工程研究中心申."12月28日截止，南京市市级工程研究中心申</div>
+                            <div class="right">2018-11-06</div>
+                        </div>
+                        <div class="list">
+                            <div class="left text-ellipsis">12月28日截止，南京市市级工程研究中心申."12月28日截止，南京市市级工程研究中心申</div>
+                            <div class="right">2018-11-06</div>
+                        </div>
+                        <div class="list">
+                            <div class="left text-ellipsis">12月28日截止，南京市市级工程研究中心申."12月28日截止，南京市市级工程研究中心申</div>
+                            <div class="right">2018-11-06</div>
+                        </div>
+                        <div class="list">
+                            <div class="left text-ellipsis">12月28日截止，南京市市级工程研究中心申."12月28日截止，南京市市级工程研究中心申</div>
+                            <div class="right">2018-11-06</div>
+                        </div>
+                        <div class="list">
+                            <div class="left text-ellipsis">12月28日截止，南京市市级工程研究中心申."12月28日截止，南京市市级工程研究中心申</div>
+                            <div class="right">2018-11-06</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 咨询专家 -->
+    <div class="container-fluid bgGray consultExpert">
+        <div class="technologyWrap container">
+            <div class="titleWrap">
+                <div class="bigTitle">咨询专家</div>
+                <div class="smallTitle">CONSULTANT EXPERT</div>
+            </div>
+            <div class="consultExpertContainer">
+                <div class="expertList">
+                    <div class="expertHead">
+                        <img src="static/image/expert/1.png" alt="">
+                        <div class="position">知识产权咨询师</div>
+                        <div class="description text-ellipsis ">南京理工大学知识产权学院博士</div>
+                    </div>
+                    <div class="expertInfo">
+                        <div class="left">高盼军</div>
+                        <div class="right">咨询</div>
+                    </div>
+                </div>
+                <div class="expertList">
+                    <div class="expertHead">
+                        <img src="static/image/expert/3.png" alt="">
+                        <div class="position">高企项目咨询师</div>
+                        <div class="description text-ellipsis ">南京理工大学知识产权学院博士</div>
+                    </div>
+                    <div class="expertInfo">
+                        <div class="left">张睿卿</div>
+                        <div class="right">咨询</div>
+                    </div>
+                </div>
+                <div class="expertList">
+                    <div class="expertHead">
+                        <img src="static/image/expert/5.png" alt="">
+                        <div class="position">资助项目咨询师</div>
+                        <div class="description text-ellipsis ">东南大学生物医学工程学院硕士</div>
+                    </div>
+                    <div class="expertInfo">
+                        <div class="left">李玮</div>
+                        <div class="right">咨询</div>
+                    </div>
+                </div>
+                <div class="expertList">
+                    <div class="expertHead">
+                        <img src="static/image/expert/4.png" alt="">
+                        <div class="position">人才项目咨询师</div>
+                        <div class="description text-ellipsis ">安徽理工大学机械学院硕士</div>
+                    </div>
+                    <div class="expertInfo">
+                        <div class="left">孙玉龙</div>
+                        <div class="right">咨询</div>
+                    </div>
+                </div>
+                <div class="expertList">
+                    <div class="expertHead">
+                        <img src="static/image/expert/7.png" alt="">
+                        <div class="position">资助项目咨询师</div>
+                        <div class="description text-ellipsis ">辽宁大学电光学院硕士</div>
+                    </div>
+                    <div class="expertInfo">
+                        <div class="left">彭帅</div>
+                        <div class="right">咨询</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部菜单 -->
+    <div class="container-fluid bgGrayDark">
+        <div class="footerMenuWrap container">
+            <div class="footerMenuWrapLeft">
+                <div class="leftBlock">
+                    <a class="blockTitle" href="companyInfo.html">中企概况</a>
+                    <a class="blockMinTitle" href="companyInfo.html?type=d1">公司简介</a>
+                    <a class="blockMinTitle" href="companyInfo.html?type=d2">分支机构</a>
+                    <a class="blockMinTitle" href="companyInfo.html?type=d3">公司招聘</a>
+                </div>
+                <div class="leftBlock">
+                    <a class="blockTitle" href="dynamic.html">科技动态 </a>
+                    <a class="blockMinTitle" href="dynamic.html?type=d1">科技项目动态</a>
+                    <a class="blockMinTitle" href="dynamic.html?type=d2">人才项目动态</a>
+                    <a class="blockMinTitle" href="dynamic.html?type=d3">其它项目动态</a>
+                </div>
+                <div class="leftBlock">
+                    <a class="blockTitle">服务业务</a>
+                    <a class="blockMinTitle">资质服务</a>
+                    <a class="blockMinTitle">资助服务</a>
+                    <a class="blockMinTitle">产学研服务</a>
+                    <a class="blockMinTitle">咨询服务</a>
+                    <a class="blockMinTitle">人才认定服务知识产权服务</a>
+                </div>
+            </div> 
+            <div class="footerMenuWrapRight">
+                <div class="footerMenuWrapRightAdress">
+                    <div class="addressWrap">
+                        <div class="blockTitle">联系地址：</div>
+                        <div class="blockMinTitle">地址1：江苏省南京市秦淮区中华路420号江苏省高新技术 创业服务中心619</div>
+                        <div class="blockMinTitle">地址2：江苏省南京市玄武区孝陵卫街道200号南京理工大学创业基地D区</div>
+                        <div class="blockMinTitle">地址3：江苏省镇江市句容市仙林东路16号双创大厦402</div>
+                    </div>
+                    <img src="static/image/phoneRed.png" class="addressImg" alt="电话">
+                </div>
+                <div class="footerMenuWrapRightQrqd">
+                    <img src="static/image/qrcode.png" class="qrcodeImg" alt="">
+                    <div class="qrcodeText">关注我们</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footerRight">Copyright © 2010-现在 江苏中企科技服务有限公司&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;苏ICP备12340894号-2</div>
+    
+    <script src="static/js/index.js"></script>
+</body>
+</html>

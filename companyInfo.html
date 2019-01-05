@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Generator" content="EditPlus?">
+	<meta name="Author" content="">
+    <meta name="Description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 插件 -->
+    <script src="resources/jquery/jquery.min.js"></script>
+    
+    <script src="resources/swiper/swiper.jquery.min.js"></script>
+    <script src="resources/swiper/swiper.min.js"></script>
+    <link href="resources/swiper/swiper.min.css" rel="stylesheet">
+
+    <script src="resources/bootstrap/js/bootstrap.min.js"></script>
+    <link href="resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- 时间轴插件 -->
+    <link rel="stylesheet" href="resources/eeyellow/jquery.eeyellow.Timeline.css">
+
+    <link href="static/css/public.css" rel="stylesheet">
+    <link href="static/css/index.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/companyInfo.css">
+    <title>中企</title>
+</head>
+<body>
+    <!-- logo 、菜单 、联系电话 -->
+    <div class="container headWrap">
+        <div class="logoContainer">
+            <img src="static/image/logo.png" alt="">
+        </div>
+        <div class="menuContainer">
+            <div class="menu-nav">
+                <div class="menu-nav-frame clearfix">
+                    <div class="menu-nav-container">
+                        <div class="menu-nav-frame-line " tabindex="-1">
+                            <a class="menu-nav-frame-line-a" href="index.html" style="text-decoration: none;">首页</a>
+                            
+                            <div class="menu-nav-frame-line-focus" tabindex="-1"></div>
+                        </div>
+                        <div class="menu-nav-frame-line active" tabindex="-1">
+                            <a class="menu-nav-frame-line-a" href="companyInfo.html" style="text-decoration: none;">中企概况</a>
+                            <div class="menu-nav-frame-line-focus" tabindex="-1"></div>
+                            <div class="menu-nav-frame-line-center">
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="companyInfo.html?type=d1">公司简介</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="companyInfo.html?type=d2">分支机构</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="companyInfo.html?type=d3">公司招聘</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-nav-frame-line " tabindex="-1">
+                            <a class="menu-nav-frame-line-a" href="dynamic.html" style="text-decoration: none;">科技动态</a>
+                            <div class="menu-nav-frame-line-center">
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="dynamic.html?type=d1">科技项目动态</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="dynamic.html?type=d2">人才项目动态</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="dynamic.html?type=d3">其它项目动态</a>
+                                </div>
+                            </div>
+                            <div class="menu-nav-frame-line-focus" tabindex="-1"></div>
+                        </div>
+                        <div class="menu-nav-frame-line " tabindex="-1">
+                            <a class="menu-nav-frame-line-a" href="serve.html" style="text-decoration: none;">服务业务</a>
+                            <div class="menu-nav-frame-line-center">
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="serve.html?type=s1">资质服务</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="serve.html?type=s2">知识产权服务</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="serve.html?type=s3">资助服务</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="serve.html?type=s4">人才认定服务</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="serve.html?type=s5">产学研服务</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="serve.html?type=s6">咨询服务</a>
+                                </div>
+                            </div>
+                            <div class="menu-nav-frame-line-focus" tabindex="-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="phoneWrap">
+            <img src="static/image/call_icon.png" class="phoneIcon" alt="">
+            <span class="phoneText">025-85730005</span>
+        </div>
+    </div>
+    <!-- 轮播图 -->
+    <div class="swiper-content" id="swiper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="static/image/banner/banner.png" class="swiper-slide-img" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/image/banner/banner2.png" class="swiper-slide-img" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/image/banner/banner3.png" class="swiper-slide-img" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="container-fluid bgGray">
+        <div class="container dynamicContainer">
+            <div class="tabWrapContainer">
+                <div class="tabTitleWrap">中企概况</div>
+                <div class="tabMinTitleWrap active" data-id="d1">公司简介</div>
+                <div class="tabMinTitleWrap" data-id="d2">分支机构</div>
+                <div class="tabMinTitleWrap" data-id="d3">公司招聘</div>
+            </div>
+            <div class="tabWrapContent" style="display:inline-block" data-href="d1">
+                <div class="companyBaseInfo">
+                    <div class="companyBaseInfoTab">
+                        <div class="companyTab">
+                            <div class="companyTabName active" data-tab="b1">公司简介</div>
+                            <div class="companyTabName" data-tab="b2">发展历程</div>
+                            <div class="companyTabName" data-tab="b3">服务团队</div>
+                            <div class="companyTabName" data-tab="b4">公司客户</div>
+                        </div>
+                        <div class="companyTabContainer">
+                            <div class="companyTabContent" data-value="b1" style="display:inline-block;">
+                                <div class="briefWrap">
+                                    <div class="briefWrapText">
+                                        中企依托于南京大学、东南大学、南京理工大学、中国科学技术大学、安徽理工大学等高校的优秀人才优势，是一家集知识产权服务、高新技术企业认定、科技项目申报、人才项目申报等科技咨询和管理培训于一体的科技中介服务机构。公司具有项目申报经验丰富的代理人和良好的社会资源背景。公司根据企业实际情况，结合政府扶持政策，有计划有针对性的培育企业，积极推荐企业参与政府各归口部门的资质认证与评估。我们将最大化节约企业付出的人力与时间成本，保障企业最大程度享受政府扶持资金支持以及减免企业相关税收之优惠，为企业持续发展注入强劲动力。
+                                        <br>
+                                        公司文化：让知识更有价值，让企业更具精彩。</div>
+                                    <img src="static/image/brief.png" alt="" class="briefWrapImg">
+                                </div>
+                            </div>
+                            <div class="companyTabContent" data-value="b2" style="display:none;">
+                                
+                                <div class="VivaTimeline">
+                                    <div class="VivaTimelineStart">2012 - 2018</div> 
+                                    <dl>
+                                        <dd class="pos-left clearfix">
+                                            <div class="circ"></div>
+                                            <div class="events">
+                                                <div class="devHistoryContent">
+                                                    <div class="devHistoryTime">2012</div>
+                                                    <div class="devHistoryDes">创始人高盼军，在安徽理工大学创立创新社，意在培养大学生知识产权、项目申报、科技竞赛等技能，培养了上百名优秀大学生，截止目前，创新社成员共获得百余项国家级奖项，授权30多项发明专利，发表50多篇SCI、EI期刊等。</div>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                        <dd class="pos-right clearfix">
+                                            <div class="circ"></div>
+                                            <div class="events">
+                                                <div class="devHistoryContent">
+                                                    <div class="devHistoryTime">2014</div>
+                                                    <div class="devHistoryDes">高盼军、韩靖、蒋云三位省双创之星，成立中企创新企业服务中心，后更名为江苏中企科技服务有限公司。</div>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                        <dd class="pos-left clearfix">
+                                            <div class="circ"></div>
+                                            <div class="events">
+                                                <div class="devHistoryContent">
+                                                    <div class="devHistoryTime">2015</div>
+                                                    <div class="devHistoryDes">在安徽成立安徽助行商业运营管理有限公司，正式开展对外科技服务业务。</div>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                        <dd class="pos-right clearfix">
+                                            <div class="circ"></div>
+                                            <div class="events">
+                                                <div class="devHistoryContent">
+                                                    <div class="devHistoryTime">2016</div>
+                                                    <div class="devHistoryDes">公司创始人高盼军荣获省“双创之星”、“中国大学生年度人物”等荣誉称号，得到安徽省省长花建慧当面表扬。</div>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                        <dd class="pos-left clearfix">
+                                            <div class="circ"></div>
+                                            <div class="events">
+                                                <div class="devHistoryContent">
+                                                    <div class="devHistoryTime">2017</div>
+                                                    <div class="devHistoryDes">成立江苏中企科技服务有限公司，面向江苏地区开展科技服务相关业务，同时开发企业服务相关软件，公司招聘南京大学、东南大学、南京理工大学、中国科学技术大学、安徽理工大学等高校多名专业领域的硕士和博士作为后台服务人员。</div>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                        <dd class="pos-right clearfix">
+                                            <div class="circ"></div>
+                                            <div class="events">
+                                                <div class="devHistoryContent">
+                                                    <div class="devHistoryTime">2018</div>
+                                                    <div class="devHistoryDes">高企申报过程中，中企服务的企业全部通过，命中率100%，创造行业内奇迹。公司创始人高盼军荣获“金山英才”、“福地英才”两项殊荣。</div>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <div class="VivaTimelineEnd">未来，中企将不断创造行业内的奇迹</div> 
+                                </div>
+                            </div>
+                            <div class="companyTabContent" data-value="b3" style="display:none;">
+                                <div class="serviceTeamWrap">
+                                    <div class="serviceTeamBlock">
+                                        <div class="title">服务实力</div>
+                                        <div class="serviceText">
+                                            中企后台服务人员全部为硕士以上学历，其中博士占比为40%，远远超过行业内平均服务水平。<br>
+                                            2018年高企申报过程中，中企服务的企业全部通过，命中率100%，创造行业内奇迹。<br>
+                                            2018年，中企服务的人才类项目，全部通过，命中率100%，创造行业内奇迹。<br>
+                                            公司创始人高盼军博士，具有丰富的实战经验，常年给各地区企业讲解相关知识产权及科技政策，荣获省“双创之星”、“中国大学生年度人物”、“金山英才”、“福地英才”等多项殊荣。
+                                        </div>
+                                    </div> 
+                                    <div class="serviceTeamBlock">
+                                        <div class="title">团队风采</div>
+                                        <div class="serviceHeadListWrap">
+                                                <div class="expertList">
+                                                    <div class="expertHead">
+                                                        <img src="static/image/expert/1.png" alt="">
+                                                        <div class="position">知识产权咨询师</div>
+                                                    </div>
+                                                    <div class="expertInfo">
+                                                        <div class="left">高盼军</div>
+                                                        <div class="description text-ellipsis2 ">南京理工大学知识产权学院博士</div>
+                                                    </div>
+                                                </div>
+                                                <div class="expertList">
+                                                    <div class="expertHead">
+                                                        <img src="static/image/expert/2.png" alt="">
+                                                        <div class="position">知识产权咨询师</div>
+                                                    </div>
+                                                    <div class="expertInfo">
+                                                        <div class="left">李昌殿</div>
+                                                        <div class="description text-ellipsis2 ">中国科学技术大学材料学院硕士</div>
+                                                    </div>
+                                                </div>
+                                                <div class="expertList">
+                                                    <div class="expertHead">
+                                                        <img src="static/image/expert/3.png" alt="">
+                                                        <div class="position">高企咨询师</div>
+                                                        
+                                                    </div>
+                                                    <div class="expertInfo">
+                                                        <div class="left">张睿卿</div>
+                                                        <div class="description text-ellipsis2 ">南京理工大学化工学院博士 </div>
+                                                    </div>
+                                                </div>
+                                                <div class="expertList">
+                                                    <div class="expertHead">
+                                                        <img src="static/image/expert/4.png" alt="">
+                                                        <div class="position">人才项目咨询师</div>
+                                                    </div>
+                                                    <div class="expertInfo">
+                                                        <div class="left">孙玉龙</div>
+                                                        <div class="description text-ellipsis2 ">安徽理工大学机械学院硕士</div>
+                                                    </div>
+                                                </div>
+                                                <div class="expertList">
+                                                    <div class="expertHead">
+                                                        <img src="static/image/expert/5.png" alt="">
+                                                        <div class="position">科技项目咨询师</div>
+                                                    </div>
+                                                    <div class="expertInfo">
+                                                        <div class="left">李 玮</div>
+                                                        <div class="description text-ellipsis2 ">东南大学生物医药工程学院硕士</div>
+                                                    </div>
+                                                </div>
+                                                <div class="expertList">
+                                                    <div class="expertHead">
+                                                        <img src="static/image/expert/6.png" alt="">
+                                                        <div class="position">科技项目咨询师</div>
+                                                    </div>
+                                                    <div class="expertInfo">
+                                                        <div class="left">章柳柳</div>
+                                                        <div class="description text-ellipsis2 ">南京理工大学电光学院硕士</div>
+                                                    </div>
+                                                </div>
+                                                <div class="expertList">
+                                                    <div class="expertHead">
+                                                        <img src="static/image/expert/7.png" alt="">
+                                                        <div class="position">人才项目咨询师</div>
+                                                    </div>
+                                                    <div class="expertInfo">
+                                                        <div class="left">彭  帅</div>
+                                                        <div class="description text-ellipsis2 ">辽宁大学信息学院硕士 </div>
+                                                    </div>
+                                                </div>
+                                                <div class="expertList">
+                                                    <div class="expertHead">
+                                                        <img src="static/image/expert/8.png" alt="">
+                                                        <div class="position">人才项目咨询师</div>
+                                                    </div>
+                                                    <div class="expertInfo">
+                                                        <div class="left">刘延杰</div>
+                                                        <div class="description text-ellipsis2 ">南京理工大学经管学院博士</div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="companyTabContent" data-value="b4" style="display:none;">
+                                <div class="clientWrap">
+                                    <div class="clientList">
+                                        <img src="static/image/client/1.png" alt="">
+                                    </div>
+                                    <div class="clientList">
+                                        <img src="static/image/client/2.png" alt="">
+                                    </div>
+                                    <div class="clientList">
+                                        <img src="static/image/client/3.png" alt="">
+                                    </div>
+                                    <div class="clientList">
+                                        <img src="static/image/client/4.png" alt="">
+                                    </div>
+                                    <div class="clientList">
+                                        <img src="static/image/client/5.png" alt="">
+                                    </div>
+                                    <div class="clientList">
+                                        <img src="static/image/client/6.png" alt="">
+                                    </div>
+                                    <div class="clientList">
+                                        <img src="static/image/client/7.png" alt="">
+                                    </div>
+                                    <div class="clientList">
+                                        <img src="static/image/client/8.png" alt="">
+                                    </div>
+                                    <div class="clientList">
+                                        <img src="static/image/client/9.png" alt="">
+                                    </div>
+                                    <div class="clientList">
+                                        <img src="static/image/client/10.png" alt="">
+                                    </div>
+                                    <div class="clientList">
+                                        <img src="static/image/client/11.png" alt="">
+                                    </div>
+                                    <div class="clientList">
+                                        <img src="static/image/client/12.png" alt="">
+                                    </div>
+                                    <div class="clientList">
+                                        <img src="static/image/client/13.png" alt="">
+                                    </div>
+                                    <div class="clientList">
+                                        <img src="static/image/client/14.png" alt="">
+                                    </div>
+                                    <div class="clientList">
+                                        <img src="static/image/client/15.png" alt="">
+                                    </div>
+                                    <div class="clientList">
+                                        <img src="static/image/client/16.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tabWrapContent" style="display:none" data-href="d2"> 
+                <div class="orgInfo">
+                    <div class="ortTopWrap">
+                        <div class="ortTopImgWrap">
+                            <img src="static/image/org/top.png" alt="" class="ortTopImg">
+                        </div>
+                        <div class="text">江苏中企科技服务有限公司</div>
+                    </div>
+                    <div class="orgListWrap">
+                        <div class="orgList">
+                            <div class="circle">研究中心</div>
+                            <div class="orgName">南京中依企信息科技有限公司</div>
+                        </div>
+                        <div class="orgList">
+                            <div class="circle">安徽</div>
+                            <div class="orgName">安徽助行商业运营管理有限公司</div>
+                        </div>
+                        <div class="orgList">
+                            <div class="circle">北京</div>
+                            <div class="orgName">北京中企科技服务有限公司</div>
+                        </div>
+                        <div class="orgList">
+                            <div class="circle">上海</div>
+                            <div class="orgName">上海中企科技服务有限公司（筹）</div>
+                        </div>
+                        <div class="orgList">
+                            <div class="circle">广东</div>
+                            <div class="orgName">广东中企科技服务有限公司（筹）</div>
+                        </div>
+                        <div class="orgList">
+                            <div class="circle">深圳</div>
+                            <div class="orgName">深圳中企科技服务有限公司</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="tabWrapContent" style="display:none" data-href="d3">
+                <div class="inviteInfo">
+                    <div class="inviteWelcomeText">我们是一个年轻的团队，对工作和生活充满热情。 我们不在乎你的性别，学历，经验，背景。 我们只在乎你是否正直诚信热爱工作。 欢迎你的加入！</div>
+                    <div class="inviteBaseInfo">
+                        <div class="positionText">职位：商务专员 </div>
+                        <div class="title">岗位职责</div>
+                        <div class="listWrap">
+                            <img src="static/image/rightIcon.png" alt="">
+                            <span class="listText">负责推广知识产权、商标、科技及资质项目申报、高企项目申报</span>
+                        </div> 
+                        <div class="listWrap">
+                            <img src="static/image/rightIcon.png" alt="">
+                            <span class="listText">寻找公司业务的新渠道，维护老渠道</span>
+                        </div> 
+                        <div class="listWrap">
+                            <img src="static/image/rightIcon.png" alt="">
+                            <span class="listText">维护好客户关系，提高客户满意度</span>
+                        </div> 
+                    </div> 
+                    <div class="inviteBaseInfo">
+                        <div class="title">任职资格</div>
+                        <div class="listWrap">
+                            <img src="static/image/rightIcon.png" alt="">
+                            <span class="listText">年龄18岁-48岁</span>
+                        </div> 
+                        <div class="listWrap">
+                            <img src="static/image/rightIcon.png" alt="">
+                            <span class="listText">熟悉操作电脑，善于沟通，交流</span>
+                        </div> 
+                        <div class="listWrap">
+                            <img src="static/image/rightIcon.png" alt="">
+                            <span class="listText">善于自我激励，喜欢应对挑战，有志向和能力挑战高薪</span>
+                        </div> 
+                        <div class="listWrap">
+                            <img src="static/image/rightIcon.png" alt="">
+                            <span class="listText">优秀大学生、口才不错的，优先考虑</span>
+                        </div> 
+                    </div> 
+                    <div class="inviteBaseInfo">
+                        <div class="title">薪资结构</div>
+                        <div class="listWrap">
+                            <img src="static/image/rightIcon.png" alt="">
+                            <span class="listText">无责任底薪3000+20%提成+奖金+绩效，综合工资8000以上（实习生薪2500+10%提成+奖金+绩效，综合工资4000以上）</span>
+                        </div> 
+                        <div class="listWrap">
+                            <img src="static/image/rightIcon.png" alt="">
+                            <span class="listText">工作时间: 朝九晚六 8小时工作制  单双休轮休制  法定节假日休息 </span>
+                        </div> 
+                    </div> 
+                    <div class="inviteBaseInfo">
+                        <div class="title">我们能为你提供的</div>
+                        <div class="listWrap">
+                            <img src="static/image/rightIcon.png" alt="">
+                            <span class="listText">办公位于市中心，处于商圈中心，工作生活两不误，楼下便是商业广场，轻松平衡工作生活</span>
+                        </div> 
+                        <div class="listWrap">
+                            <img src="static/image/rightIcon.png" alt="">
+                            <span class="listText">能学习到很多新知识，尤其在知识产权、项目申报等方面 </span>
+                        </div> 
+                        <div class="listWrap">
+                            <img src="static/image/rightIcon.png" alt="">
+                            <span class="listText">提供节日礼品，生日福利 </span>
+                        </div> 
+                        <div class="listWrap">
+                            <img src="static/image/rightIcon.png" alt="">
+                            <span class="listText">享受法定带薪婚假，产假，陪产假，丧假待遇 </span>
+                        </div> 
+                        <div class="listWrap">
+                            <img src="static/image/rightIcon.png" alt="">
+                            <span class="listText">提供团队建设活动，聚餐，旅游等福利 </span>
+                        </div> 
+                        <div class="listWrap">
+                            <img src="static/image/rightIcon.png" alt="">
+                            <span class="listText">社保，全勤奖，工龄工资 </span>
+                        </div> 
+                    </div> 
+                    <div class="inviteBaseInfo">
+                        <div class="title">你所关心的</div>
+                        <div class="listWrap">
+                            <img src="static/image/rightIcon.png" alt="">
+                            <span class="listText">入职提供带薪培训，一带一的教学</span>
+                        </div> 
+                        <div class="listWrap">
+                            <img src="static/image/rightIcon.png" alt="">
+                            <span class="listText">公司提倡准时准点下班，且每月享受1小时有薪假 </span>
+                        </div> 
+                        <div class="listWrap">
+                            <img src="static/image/rightIcon.png" alt="">
+                            <span class="listText">90后年轻团队，人性化氛围浓厚 </span>
+                        </div> 
+                    </div> 
+                    <div class="inviteBaseInfo" style="margin-top:60px;margin-bottom:0px;">
+                        <div class="title" style="font-size:18px;">联系我们</div>
+                        <div class="listWrap1">
+                            <img src="static/image/positionIcon.png" alt="">
+                            <span class="listText">江苏省南京市秦淮区中华路420号江苏省高新技术创业服务中心619室（一号线三山街站）</span>
+                        </div> 
+                        <div class="listWrap1">
+                            <img src="static/image/positionIcon.png" alt="">
+                            <span class="listText">江苏省南京市玄武区孝陵卫街道200号南京理工大学（二号线孝陵卫站） </span>
+                        </div> 
+                        <div class="listWrap1">
+                            <img src="static/image/positionIcon.png" alt="">
+                            <span class="listText">江苏省镇江市句容市宝华镇仙林东路江苏省青年人才创新创业基地 </span>
+                        </div> 
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        $(function (){
+            var swiper = new Swiper('#swiper .swiper-container', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                freeMode : true,
+                loop : true,
+                autoplay: 5000,
+            });
+            var type = getRouterParam("type") ? getRouterParam("type") : 'd1';
+            initActive(type)
+            if(type == 'd1'){
+                initBaseTab("b1")
+            }
+            
+            //中企概况切换
+            $(".tabMinTitleWrap").on("click" , function(){
+                var dataId = $(this).attr('data-id');
+                if(dataId == 'd1'){
+                    initBaseTab("b1")
+                }
+                initActive(dataId)
+            })
+            //公司简介标签页切换
+            $(".companyTabName").on("click" , function(){
+                var dataTab = $(this).attr('data-tab');
+                initBaseTab(dataTab)
+            })
+        });
+        function initActive(dataId){
+            var tabMinTitleWrap = $(".tabMinTitleWrap");
+            for(var i = 0 ; i < tabMinTitleWrap.length ; i++){
+                if($(tabMinTitleWrap[i]).hasClass('active')){
+                    $(tabMinTitleWrap[i]).removeClass('active');
+                }
+            }
+            //tab被选中
+            $('[data-id=' + dataId + ']').addClass('active')
+
+            var tabWrapContent = $(".tabWrapContent")
+            for(var i = 0 ; i < tabWrapContent.length ; i++){
+                if($(tabWrapContent[i])[0].style.display == 'inline-block'){
+                    $(tabWrapContent[i])[0].style.display = 'none'
+                }
+            }
+            //内容显示
+            $('[data-href=' + dataId + ']')[0].style.display = 'inline-block';
+        }
+        function initBaseTab(dataTab){
+            var companyTabName = $(".companyTabName");
+            for(var i = 0 ; i < companyTabName.length ; i++){
+                if($(companyTabName[i]).hasClass('active')){
+                    $(companyTabName[i]).removeClass('active');
+                }
+            }
+            //tab被选中
+            $('[data-tab=' + dataTab + ']').addClass('active')
+
+            var companyTabContent = $(".companyTabContent")
+            for(var i = 0 ; i < companyTabContent.length ; i++){
+                if($(companyTabContent[i])[0].style.display == 'inline-block'){
+                    $(companyTabContent[i])[0].style.display = 'none'
+                }
+            }
+            //内容显示
+            $('[data-value=' + dataTab + ']')[0].style.display = 'inline-block';
+        }
+        function getRouterParam(name){
+            return  decodeURIComponent((new RegExp('[?|&]'+name+'='+'([^&;]+?)(&|#|;|$)').exec(location.href)||[,""])[1].replace(/\+/g,'%20'))||null;
+        }
+    </script>
+</body>
+</html>

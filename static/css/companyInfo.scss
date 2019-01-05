@@ -1,0 +1,377 @@
+.dynamicContainer{
+    padding-top:40px;
+    padding-bottom:40px;
+    overflow:hidden;
+    .tabWrapContainer{
+        text-align:center;
+        min-height:400px;
+        width:200px;
+        margin-right:20px;
+        display:inline-block;
+        background:white;
+        .tabTitleWrap{
+            height: 60px;
+            color:#ffff;
+            font-size:20px;
+            line-height:60px;
+	        background-color: #cc0715;
+        }
+        .tabMinTitleWrap{
+            padding:13px 0px;
+            font-size:16px;
+            color:#333;
+            position:relative;
+        }
+        .tabMinTitleWrap:after{
+            position:absolute;
+            content : "";
+            bottom:0px;
+            width:100%;
+            left:0px;
+            border-bottom:1px solid #efefef;
+        }
+        .tabMinTitleWrap.active{
+            background-color: #ededed;
+            position:relative;
+        }
+        .tabMinTitleWrap.active:before{
+            position:absolute;
+            content : "";
+            width:2px;
+            background:#cc0715;
+            height: 100%;
+            left: 0px;
+            top:0px;
+        }
+        .tabMinTitleWrap:hover{
+            background-color: #ededed;
+            position:relative;
+            cursor:pointer;
+        }
+        .tabMinTitleWrap:hover:before{
+            position:absolute;
+            content : "";
+            width:2px;
+            background:#cc0715;
+            height: 100%;
+            left: 0px;
+            top:0px;
+        }
+    }
+    .tabWrapContent{
+        width: calc(100% - 220px);
+        display: inline-block;
+        min-height: 500px;
+        // padding: 18px 50px 45px 50px;
+        float: right;
+        .companyBaseInfo{
+            .companyBaseInfoTab{
+                overflow:hidden;
+            }
+            .companyTab{
+                font-size:14px;
+                color:#333;
+                height:80px;
+                
+                .companyTabName{
+                    width:25%;
+                    float:left;
+                    padding:15px 0px;
+                    text-align:center;
+                    background: white;
+                    cursor:pointer;
+                }
+                .companyTabName.active{
+                    color:#cc0715;
+                    position:relative;
+                }
+                .companyTabName.active:before{
+                    content : "";
+                    position:absolute;
+                    width:90%;
+                    border-bottom:2px solid #cc0715;
+                    bottom:0px;
+                    left:5%;
+                }
+                .companyTabName.active:after{
+                    content: "";
+                    position: absolute;
+                    bottom: -8px;
+                    width: 0;
+                    height: 0;
+                    border-left: 8px solid transparent;
+                    border-right: 8px solid transparent;
+                    border-top: 10px solid #cc0715;
+                    left: calc(50% - 8px);
+                }
+            }
+            .companyTabContainer{
+                background:white;
+                .companyTabContent{
+                    padding:40px 50px;
+                    width:100%;
+                    .briefWrap{
+                        .briefWrapText{
+                            color: #333;
+                            line-height: 30px;
+                            margin-bottom: 20px;
+                        }
+                        .briefWrapImg{
+                            width:100%;
+                        }
+                    }
+                    .devHistoryContent{
+                        padding:20px;
+                        .devHistoryTime{
+                            color:#333;
+                            font-weight:bold;
+                            margin-bottom:10px;
+                        }
+                        .devHistoryDes{
+                            color:#666;
+                            line-heihgt:25px;
+                        }
+                    }
+                    .serviceTeamWrap{
+                        .serviceTeamBlock{
+                            .title{
+                                padding:10px 20px 10px 15px;
+                                position:relative;
+                                color:#333;
+                                font-size:18px;
+                                font-weight:bold;
+                            }
+                            .title:before{
+                                content: "";
+                                position: absolute;
+                                border-style: solid;
+                                border-width: 7px;
+                                left: 0px;
+                                border-color: transparent transparent transparent #e5e5e5;
+                                top: 16px;
+                            }
+                            .serviceText{
+                                color: #666666;
+                                line-height: 35px;
+                                padding-left: 15px;
+                            }
+                            .serviceHeadListWrap{
+                                .expertList{
+                                    width: calc((100% - 69px) / 4);
+                                    margin-right: 23px;
+                                    display: inline-block;
+                                    vertical-align: bottom;
+                                    box-sizing: border-box;
+                                    float: left;
+                                    margin-bottom:23px;
+                                    .expertHead{
+                                        position:relative;
+                                        padding-bottom:125%;
+                                        width:100%;
+                                        overflow:hidden;
+                                        >img{
+                                            position:absolute;
+                                            top:0px;
+                                            height:100%;
+                                        }
+                                        .position{
+                                            background-color: #cc0715;
+                                            padding: 6px 8px;
+                                            color: white;
+                                            left: 0px;
+                                            top: 0px;
+                                            display: inline-block;
+                                            position: absolute;
+                                            font-size: 10px;
+                                        }
+                                    }
+                                    .expertInfo{
+                                        overflow:hidden;
+                                        .left{
+                                            color: #333;
+                                            font-size:15px;
+                                            font-weight:bold;
+                                            line-height:22px;
+                                            margin:10px 0px;
+                                        }
+                                        .description{
+                                            color:#666;
+                                            height:40px;
+                                        }
+                                    }
+                                }
+                                .expertList:nth-child(4n + 0){
+                                    margin-right:0px;
+                                }
+                            }
+                        }
+                    }
+
+                    .clientWrap{
+                        overflow:hidden;
+                        border-top:1px solid #efefef;
+                        border-right:1px solid #efefef;
+                        .clientList{
+                            float:left;
+                            box-sizing: border-box;
+                            border-left:1px solid #efefef;
+                            border-bottom:1px solid #efefef;
+                            width:25%;
+                            overflow:hidden;
+                            padding:20px 5px;
+                            text-align:center;
+                            >img{
+                                height:50px;
+                                max-width:100%;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+        }
+        .orgInfo{
+            padding:80px 20px;
+            background : white;
+            min-height:500px;
+            .ortTopWrap{
+                text-align:center;
+                padding-bottom:50px;
+                overflow:hidden;
+                position:relative;
+                .ortTopImgWrap{
+                    width:90px;
+                    height:90px;
+                    text-align:center;
+                    line-height:90px;
+                    margin:0px auto 10px auto;
+                    border: 1px solid #cc0715;
+                    border-radius: 50%;
+                    padding-top:15px;
+                }
+                .text{
+                    font-size: 16px;
+                    color:#333;
+                }
+            }
+            .ortTopWrap:before{
+                content: "";
+                position: absolute;
+                height: 45px;
+                left: 50%;
+                border-left: 1px solid #efefef;
+                bottom: 0px;
+            }
+            .ortTopWrap:after{
+                content: "";
+                position: absolute;
+                height: 45px;
+                border-bottom: 1px solid #efefef;
+                bottom: 0px;
+                width: calc(100% - (100% / 6));
+                left: calc(100% / 12);
+            }
+            .orgListWrap{
+                overflow:hidden;
+                .orgList{
+                    float: left;
+                    position:relative;
+                    width: calc(100% / 6);
+                    .circle{
+                        width: 70px;
+                        height: 70px;
+                        text-align: center;
+                        line-height: 70px;
+                        border: 1px solid #cc0715;
+                        border-radius: 50%;
+                        margin: 50px auto 10px auto;
+                    
+                    }
+                    .orgName{
+                        width:100%;
+                        padding:0px 10px;
+                        text-align:center;
+                    }
+                }
+                .orgList:before{
+                    content: '';
+                    position: absolute;
+                    height: 50px;
+                    border-left: 1px solid #efefef;
+                    left: 50%;
+                }
+            }
+        }
+        .inviteInfo{
+            padding:70px 50px;
+            width:100%;
+            min-height:500px;
+            background:white;
+            .inviteWelcomeText{
+                font-size: 16px;
+                line-height: 30px;
+                color: #333333;
+                margin-bottom:30px;
+            }
+            .inviteBaseInfo{
+                margin-bottom:30px;
+                .positionText{
+                    font-size: 18px;
+                    color:#333;
+                    padding-left:15px;
+                    margin-bottom:20px;
+                    font-weight:bold;
+                }
+                .title{
+                    padding: 0px 20px 0px 15px;
+                    margin-bottom: 20px;
+                    position: relative;
+                    color: #333;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+                .title:before{
+                    content: "";
+                    position: absolute;
+                    border-style: solid;
+                    border-width: 6px;
+                    left: 0px;
+                    border-color: transparent transparent transparent #e5e5e5;
+                    top: 6px;
+                }
+                .listWrap{
+                    overflow:hidden;
+                    margin-bottom:15px;
+                    img{
+                        width: 13px;
+                        float: left;
+                        margin-right: 10px;
+                        margin-top: 6px;
+                    }
+                    .listText{
+                        font-size:14px;
+                        color: #666666;
+                        float:left;
+                    }
+                }
+                .listWrap1{
+                    overflow:hidden;
+                    margin-bottom:15px;
+                    img{
+                        float: left;
+                        margin-right: 10px;
+                        margin-top: 4px;
+                        height: 13px;
+                    }
+                    .listText{
+                        font-size:14px;
+                        color: #666666;
+                        float:left;
+                    }
+                }
+            }
+        }
+    }
+    
+}

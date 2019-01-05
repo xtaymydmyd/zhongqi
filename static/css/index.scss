@@ -1,0 +1,370 @@
+.titleWrap{
+    margin:70px 0px 40px 0px;
+    text-align:center;
+    .bigTitle{
+        color: #333333;
+        font-size:28px;
+        margin-bottom:10px;
+    }
+    .smallTitle{
+        font-size: 10px;
+        color:#999;
+    }
+}
+.bgGray{
+    background-color:#f2f4f6;
+}
+.bgWhite{
+    background:white;
+}
+.bgGrayDark{
+    background-color: #383838;
+}
+.IndexOurService{
+    padding-bottom: 55px;
+    .serviceWrap{
+        .serviceContainer{
+            display:inline-block;
+            overflow:hidden;
+            width:100%;
+            
+
+            .serviceBlockFirst{
+                background:#cc0715;
+                padding:40px 50px 40px 50px;
+                text-align : center;
+                color:white;
+                margin:0px 23px 0px 0px;
+                display: inline-block;
+                float:left;
+                height: 257px;
+                overflow: hidden;
+                .serviceBlockTitle{
+                    font-size: 24px;
+                    padding-bottom:63px;
+                    position:relative;
+                }
+                .serviceBlockTitle:after{
+                    content: '';
+                    position: absolute;
+                    bottom: 30px;
+                    width: 36px;
+                    left: calc(50% - 18px);
+                    border-bottom: 3px solid #ffff;
+                }
+                .serviceBlockContent{
+                    display:inline-block;
+                    text-align: left;
+                    >div{
+                        display:inline-block;
+                        margin-bottom:20px;
+                        font-size: 14px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .serviceBlock{
+                width: calc((100% - 46px) / 3);
+                display: inline-block;
+                float: left;
+                background: white;
+                border: 1px solid #dddddd;
+                height: 257px;
+                overflow: hidden;
+                box-sizing: border-box;
+                text-align: center;
+                padding: 40px 0px 40px 0px;
+            }
+            .serviceBlockImg{
+                height:73px;
+                margin-bottom:32px;
+            }
+            .serviceBlockTitle1{
+                padding-bottom:63px;
+                position:relative;
+                font-size: 24px;
+                color:#666;
+            }
+            .serviceBlockTitle1:after{
+                content: '';
+                position: absolute;
+                bottom: 30px;
+                width: 36px;
+                left: calc(50% - 18px);
+                border-bottom: 3px solid #cc0715;
+            }
+            .wrap{
+                width:calc((100% - 46px) / 3);
+                margin:0px 23px 23px 0px;
+                overflow: hidden;
+                float: left;
+                display: inline-block;
+                .serviceBlock{
+                    display:inline-block;
+                    width:100%;
+                }
+                .serviceBlockFirst{
+                    display:none;
+                    width:100%;
+                }
+            }
+            .wrap:nth-child(3n + 0){
+                margin-right:0px;
+            }
+            .wrap:hover{
+                cursor:pointer;
+                .serviceBlock{
+                    display:none;
+                    width:100%;
+                }
+                .serviceBlockFirst{
+                    display:inline-block;;
+                    width:100%;
+                }
+            }
+        }
+    }
+}
+//科技动态
+.technologyNews{
+    padding-bottom:70px;
+    .technologyWrap{
+        .technologyContainer{
+            overflow:hidden;
+            .technologyContainerWrap{
+                width:calc((100% - 46px) / 3);
+                margin-right:23px;
+                float:left;
+                .technologyContainerTitle{
+                    border-bottom:2px solid  #cc0715;
+                    overflow:hidden;
+                    padding-bottom:10px;
+                    margin-bottom:20px;
+                    .titleLeft{
+                        font-size: 18px;
+                        color:#333;
+                        padding-left:10px;
+                        float:left;
+                        position:relative;
+                    }
+                    .titleLeft:before{
+                        content: '';
+                        position: absolute;
+                        border-left: 2px solid #cc0715;
+                        height: 15px;
+                        top: 6px;
+                        left: 0px;
+                    }
+                    .titleRight{
+                        margin-top: 3px;
+                        float:right;
+                        border-radius: 2px;
+                        border: solid 1px #d2d2d2;
+                        color: #a6a6a6;
+                        padding: 0px 4px;
+                    }
+                    .titleRight:hover{
+                        background:#cc0715;
+                        border:1px solid #cc0715;
+                        color:white;
+                        cursor:pointer;
+                    }
+                }
+            }
+            .technologyContainerWrap:nth-child(3n + 0){
+                margin-right:0px;
+            }
+        }
+        .technologyContainerList{
+            .list{
+                cursor:pointer;
+                position:relative;
+                padding-left:12px;
+                box-sizing:border-box;
+                overflow:hidden;
+                margin-bottom:12px;
+                .left{
+                    float:left;
+                    width:calc(100% - 80px);
+                }
+                .right{
+                    float:right;
+                }
+            }
+            .list:before{
+                content : "";
+                position:absolute;
+                width:6px;
+                height:6px;
+                left: 0px;
+                top: 8px;
+                border-radius:50%;
+                background:#b6b6b6;
+            }
+        }
+    }
+}
+
+
+.consultExpert{
+    padding-bottom:70px;
+    .consultExpertContainer{
+        overflow:hidden;
+        .expertList{
+            width: calc((100% - 92px) / 5);
+            margin-right: 23px;
+            display: inline-block;
+            vertical-align: bottom;
+            box-sizing: border-box;
+            float: left;
+            .expertHead{
+                position:relative;
+                padding-bottom:125%;
+                width:100%;
+                overflow:hidden;
+                >img{
+                    position:absolute;
+                    top:0px;
+                    height:100%;
+                }
+                .position{
+                    background-color: #cc0715;
+                    padding: 6px 8px;
+                    color: white;
+                    left: 0px;
+                    top: 0px;
+                    display: inline-block;
+                    position: absolute;
+                    font-size: 10px;
+                }
+                .description{
+                    position:absolute;
+                    bottom:0px;
+                    background-color:rgba(0,0,0,0.4);
+                    color:white;
+                    padding:4px 0px 4px 9px;
+                    width:100%;
+                    font-size:10px;
+                }
+            }
+            .expertInfo{
+                overflow:hidden;
+                margin-top:10px;
+                .left{
+                    color: #666666;
+                    font-size:14px;
+                    float:left;
+                    line-height:22px;
+                }
+                .right{
+                    float:right;
+                    border-radius: 2px;
+                    border: solid 1px #cc0715;
+                    color: #cc0715;
+                    padding: 0px 4px;
+                }
+                
+            }
+        }
+        .expertList:hover{
+            .expertInfo{
+                .left{
+                    color:#cc0715;
+                }
+                .right{
+                    background-color:#cc0715;
+                    color:white;
+                }
+            }
+        }
+        .expertList:last-child{
+            margin-right:0px;
+        }
+    }
+}
+
+.footerMenuWrap{
+    padding-top:40px;
+    padding-bottom:40px;
+    overflow:hidden;
+
+    .footerMenuWrapLeft{
+        overflow: hidden;
+        display: inline-block;
+        margin-right: 50px;
+        float:left;
+
+        .leftBlock{
+            float:left;
+            color:white;
+            width: 150px;
+            .blockTitle{
+                font-size: 16px;
+                margin-bottom:6px;
+                font-size: 16px;
+                margin-bottom: 6px;
+                display: inline-block;
+                width: 100%;
+                color: white;
+                text-decoration:none;
+                cursor:pointer;
+            }
+            .blockMinTitle{
+                font-size: 12px;
+                line-height:23px;
+                display: inline-block;
+                width: 100%;
+                color: white;
+                text-decoration:none;
+                cursor:pointer;
+            }
+        }
+    }
+    .footerMenuWrapRight{
+        overflow:hidden;
+        display: inline-block;
+        width: calc(100% - 500px);
+        float: right;
+        .footerMenuWrapRightAdress{
+            float: left;
+            color: white;
+            .addressWrap{
+                .blockTitle{
+                    font-size: 16px;
+                    margin-bottom:6px;
+                }
+                .blockMinTitle{
+                    font-size: 12px;
+                    line-height:23px;
+                }
+            }
+            .addressImg{
+                height:24px;
+                margin-top:18px;
+            }
+        }
+
+        .footerMenuWrapRightQrqd{
+            display: inline-block;
+            float: right;
+            .qrcodeImg{
+                margin-bottom:15px;
+                font-size:14px;
+                width:91px;
+            }
+            .qrcodeText{
+                color: white;
+                letter-spacing: 6px;
+                width: 91px;
+                text-align: center;
+                margin-left: 3px;
+            }
+        }
+    }
+}
+.footerRight{
+    line-height:40px;
+    background:#222222;
+    color:white;
+    text-align:center;
+}

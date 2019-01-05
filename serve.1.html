@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Generator" content="EditPlus?">
+	<meta name="Author" content="">
+    <meta name="Description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 插件 -->
+    <script src="resources/jquery/jquery.min.js"></script>
+    
+    <script src="resources/swiper/swiper.jquery.min.js"></script>
+    <script src="resources/swiper/swiper.min.js"></script>
+    <link href="resources/swiper/swiper.min.css" rel="stylesheet">
+
+    <script src="resources/bootstrap/js/bootstrap.min.js"></script>
+    <link href="resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="static/css/public.css" rel="stylesheet">
+    <link href="static/css/index.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/dynamic.css">
+    <title>中企</title>
+</head>
+<body>
+    <!-- logo 、菜单 、联系电话 -->
+    <div class="container headWrap">
+        <div class="logoContainer">
+            <img src="static/image/logo.png" alt="">
+        </div>
+        <div class="menuContainer">
+            <div class="menu-nav">
+                <div class="menu-nav-frame clearfix">
+                    <div class="menu-nav-container">
+                        <div class="menu-nav-frame-line " tabindex="-1">
+                            <a class="menu-nav-frame-line-a" href="index.html" style="text-decoration: none;">首页</a>
+                            
+                            <div class="menu-nav-frame-line-focus" tabindex="-1"></div>
+                        </div>
+                        <div class="menu-nav-frame-line" tabindex="-1">
+                            <a class="menu-nav-frame-line-a" href="companyInfo.html" style="text-decoration: none;">中企概况</a>
+                            <div class="menu-nav-frame-line-focus" tabindex="-1"></div>
+                            <div class="menu-nav-frame-line-center">
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="companyInfo.html?type=d1">公司简介</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="companyInfo.html?type=d2">分支机构</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="companyInfo.html?type=d3">公司招聘</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-nav-frame-line " tabindex="-1">
+                            <a class="menu-nav-frame-line-a" href="dynamic.html" style="text-decoration: none;">科技动态</a>
+                            <div class="menu-nav-frame-line-center">
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="dynamic.html?type=d1">科技项目动态</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="dynamic.html?type=d2">人才项目动态</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="dynamic.html?type=d3">其它项目动态</a>
+                                </div>
+                            </div>
+                            <div class="menu-nav-frame-line-focus" tabindex="-1"></div>
+                        </div>
+                        <div class="menu-nav-frame-line active" tabindex="-1">
+                            <a class="menu-nav-frame-line-a" href="serve.html" style="text-decoration: none;">服务业务</a>
+                            <div class="menu-nav-frame-line-center">
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="serve.html?type=s1">资质服务</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="serve.html?type=s2">知识产权服务</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="serve.html?type=s3">资助服务</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="serve.html?type=s4">人才认定服务</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="serve.html?type=s5">产学研服务</a>
+                                </div>
+                                <div class="menu-nav-frame-line-center-wrap">
+                                    <a class="menu-nav-frame-line-li" href="serve.html?type=s6">咨询服务</a>
+                                </div>
+                            </div>
+                            <div class="menu-nav-frame-line-focus" tabindex="-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="phoneWrap">
+            <img src="static/image/call_icon.png" class="phoneIcon" alt="">
+            <span class="phoneText">025-85730005</span>
+        </div>
+    </div>
+    <!-- 轮播图 -->
+    <div class="swiper-content" id="swiper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="static/image/banner/banner.png" class="swiper-slide-img" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/image/banner/banner2.png" class="swiper-slide-img" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/image/banner/banner3.png" class="swiper-slide-img" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="container-fluid bgGray">
+        <div class="container dynamicContainer">
+            <div class="tabWrapContainer">
+                <div class="tabTitleWrap">服务业务</div>
+                <div class="tabMinTitleWrap active" data-id="s1">资质服务</div>
+                <div class="tabMinTitleWrap" data-id="s2">知识产权服务</div>
+                <div class="tabMinTitleWrap" data-id="s3">资助服务</div>
+                <div class="tabMinTitleWrap" data-id="s4">人才认定服务</div>
+                <div class="tabMinTitleWrap" data-id="s5">产学研服务</div>
+                <div class="tabMinTitleWrap" data-id="s6">咨询服务</div>
+            </div>
+            <div class="tabWrapContent" style="display:inline-block" data-href="s1">
+                <div class="list">
+                    <div class="listLeft text-ellipsis">江苏省“双创计划”申报</div>
+                    <div class="listRight">2018-05-20</div>
+                </div>
+                <div class="list">
+                    <div class="listLeft text-ellipsis">江苏省“双创计划”申报</div>
+                    <div class="listRight">2018-05-20</div>
+                </div>
+                <div class="list">
+                    <div class="listLeft text-ellipsis">江苏省“双创计划”申报</div>
+                    <div class="listRight">2018-05-20</div>
+                </div>
+            </div>
+            <div class="tabWrapContent" style="display:inline-block" data-href="s2">
+                <div class="list">
+                    <div class="listLeft text-ellipsis">江苏省“双创计划”申报</div>
+                    <div class="listRight">2018-05-20</div>
+                </div>
+                <div class="list">
+                    <div class="listLeft text-ellipsis">江苏省“双创计划”申报</div>
+                    <div class="listRight">2018-05-20</div>
+                </div>
+                <div class="list">
+                    <div class="listLeft text-ellipsis">江苏省“双创计划”申报</div>
+                    <div class="listRight">2018-05-20</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <script>
+        $(function (){
+            var swiper = new Swiper('#swiper .swiper-container', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                freeMode : true,
+                loop : true,
+                autoplay: 5000,
+            });
+            var type = getRouterParam("type") ? getRouterParam("type") : 's1';
+            initActive(type)
+            $(".tabMinTitleWrap").on("click" , function(){
+                var dataId = $(this).attr('data-id');
+                initActive(dataId)
+            })
+        });
+        function initActive(dataId){
+            var tabMinTitleWrap = $(".tabMinTitleWrap");
+            for(var i = 0 ; i < tabMinTitleWrap.length ; i++){
+                if($(tabMinTitleWrap[i]).hasClass('active')){
+                    $(tabMinTitleWrap[i]).removeClass('active');
+                }
+            }
+            //tab被选中
+            $('[data-id=' + dataId + ']').addClass('active')
+
+            var tabWrapContent = $(".tabWrapContent")
+            for(var i = 0 ; i < tabWrapContent.length ; i++){
+                if($(tabWrapContent[i])[0].style.display == 'inline-block'){
+                    $(tabWrapContent[i])[0].style.display = 'none'
+                }
+            }
+            //内容显示
+            $('[data-href=' + dataId + ']')[0].style.display = 'inline-block';
+        }
+        function getRouterParam(name){
+            return  decodeURIComponent((new RegExp('[?|&]'+name+'='+'([^&;]+?)(&|#|;|$)').exec(location.href)||[,""])[1].replace(/\+/g,'%20'))||null;
+        }
+    </script>
+</body>
+</html>
