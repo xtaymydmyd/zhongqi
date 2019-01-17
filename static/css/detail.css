@@ -19,7 +19,10 @@
       padding: 13px 0px;
       font-size: 16px;
       color: #333;
-      position: relative; }
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      text-decoration: none; }
     .dynamicContainer .tabWrapContainer .tabMinTitleWrap:after {
       position: absolute;
       content: "";

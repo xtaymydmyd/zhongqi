@@ -12,6 +12,7 @@ $(function (){
     });
     getDynamicMenuList();
 });
+
 //获取数据
 function getDynamicMenuList(){
     $.ajax({
@@ -46,6 +47,7 @@ function getDynamicMenuList(){
                 menu : menu,
                 detail : detail
             }
+            console.log(data)
             var html = template('content', data);
             document.getElementById("detailContent").innerHTML = html;
             initActive(type)

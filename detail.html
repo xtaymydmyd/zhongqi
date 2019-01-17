@@ -130,7 +130,7 @@
         <div class="tabWrapContainer">
             <div class="tabTitleWrap">科技动态</div> 
             {{each menu item i}}
-            <div class="tabMinTitleWrap" data-id="{{item.id}}">{{item.name}}</div>
+                <a class="tabMinTitleWrap " data-id="{{item.id}}" href="dynamic.html?type={{item.id}}">{{item.name}}</a>
             {{/each}}
         </div>
         <div class="tabWrapContentDetail" >
