@@ -25,7 +25,7 @@
     <link href="static/css/public.css" rel="stylesheet">
     <link href="static/css/index.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="static/css/companyInfo.css">
+    <link rel="stylesheet" href="static/css/detail.css">
     <title>中企</title>
 </head>
 <body>
@@ -35,7 +35,7 @@
             <img src="static/image/logo.png" alt="">
         </div>
         <div class="menuContainer">
-            <div class="menu-nav">
+                <div class="menu-nav">
                 <div class="menu-nav-frame clearfix">
                     <div class="menu-nav-container">
                         <div class="menu-nav-frame-line " tabindex="-1">
@@ -43,7 +43,7 @@
                             
                             <div class="menu-nav-frame-line-focus" tabindex="-1"></div>
                         </div>
-                        <div class="menu-nav-frame-line " tabindex="-1">
+                        <div class="menu-nav-frame-line" tabindex="-1">
                             <a class="menu-nav-frame-line-a" href="companyInfo.html" style="text-decoration: none;">中企概况</a>
                             <div class="menu-nav-frame-line-focus" tabindex="-1"></div>
                             <div class="menu-nav-frame-line-center">
@@ -124,49 +124,54 @@
         </div>
     </div>
     <div class="container-fluid bgGray">
-        <div class="container dynamicContainer" id="dynamicContainer">
-            
-        </div>
+        <div class="container dynamicContainer" id="detailContent"></div>
     </div>
     <script id="content" type="text/html">
         <div class="tabWrapContainer">
-            <div class="tabTitleWrap">服务业务</div>
-            {{each serviceData item i}}
-                <div class="tabMinTitleWrap" data-id="{{item.id}}">{{item.name}}</div>
+            <div class="tabTitleWrap">科技动态</div> 
+            {{each menu item i}}
+                <a class="tabMinTitleWrap " data-id="{{item.id}}" href="serve.html?type={{item.id}}">{{item.name}}</a>
             {{/each}}
         </div>
-        {{each serviceData item j}}
-        <div class="tabWrapContent" data-id-content="{{item.id}}" style="display:inline-block;">
-            <div class="companyBaseInfo">
-                <div class="companyBaseInfoTab">
-                    <div class="companyTab" style="display:{{item.class.length > 1 ? 'block' : 'none'}}">
-                        {{each item.class info k}}
-                            <div class="companyTabName" data-tab="{{info.id}}" style="width:calc(100% / {{item.class.length}})">{{info.name}}</div>
-                        {{/each}}
+        <div class="tabWrapContentDetail" >
+            <div class="tableWrap">
+                <div class="lineWrap">
+                    <div class="lineTitle">政策名称</div>
+                    <div class="lineContent">{{detail.name}}</div>
+                </div>
+                <div class="lineWrap">
+                    <div class="lineTitle">发文单位及文号</div>
+                    <div class="lineContent">{{detail.depart}}</div>
+                </div>
+                <div class="lineWrap">
+                    <div class="lineTitle">申报时间</div>
+                    <div class="lineContent" style="width: calc((100% - 375px) / 3);box-sizing: border-box;">{{detail.applyTime}}</div>
+                    <div class="lineTitle">结束时间</div>
+                    <div class="lineContent" style="width: calc((100% - 375px) / 3);box-sizing: border-box;">{{detail.endTime}}</div>
+                    <div class="lineTitle">主管部门</div>
+                    <div class="lineContent" style="width: calc((100% - 375px) / 3);box-sizing: border-box;">{{detail.comDepart}}</div>
+                </div>
+                <div class="lineWrap">
+                    <div class="lineTitle">政策优惠</div>
+                    <div class="lineContent">
+                        <div class="lineHeightContent">{{#detail.discount}} </div>
                     </div>
-                    {{each item.class info m}}
-                        <div class="companyTabContainer" data-list-id="{{info.id}}" style="display:inline-block;">
-                            <div class="companyTabContent">
-                                {{if info.list}}
-                                    {{each info.list blockItem m}}
-                                    <a class="list" href="serverDetail.html?type={{item.id}}&class={{info.id}}&id={{blockItem.id}}">
-                                        <div class="listLeft text-ellipsis">{{blockItem.name}}</div>
-                                        <div class="listRight">{{blockItem.applyTime}}</div>
-                                    </a>
-                                    {{/each}}
-                                {{/if}}
-                                {{if !info.list}}
-                                    {{#info.other}} 
-                                {{/if}}
-                            </div> 
-                        </div>
-                    {{/each}}
+                </div>
+                <div class="lineWrap">
+                    <div class="lineTitle">申报要求</div>
+                    <div class="lineContent">
+                        <div class="lineHeightContent">{{#detail.require}}</div>
+                    </div>
+                </div>
+                <div class="lineWrap">
+                    <div class="lineTitle">必备材料</div>
+                    <div class="lineContent">
+                        <div class="lineHeightContent">{{#detail.materials}}</div>
+                    </div>
                 </div>
             </div>
         </div>
-        {{/each}}
     </script>
-
-    <script src="static/js/serve.js"></script>
+    <script src="static/js/serverDetail.js"></script>
 </body>
 </html>

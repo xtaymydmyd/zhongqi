@@ -11,20 +11,6 @@ $(function (){
         autoplay: 5000,
     });
    
-    
-    // //中企概况切换
-    // $(".tabMinTitleWrap").on("click" , function(){
-    //     var dataId = $(this).attr('data-id');
-    //     if(dataId == 'd1'){
-    //         initBaseTab("b1")
-    //     }
-    //     initActive(dataId)
-    // })
-    // //公司简介标签页切换
-    // $(".companyTabName").on("click" , function(){
-    //     var dataTab = $(this).attr('data-tab');
-    //     initBaseTab(dataTab)
-    // })
     getServiceMenuList();
 });
 
@@ -55,7 +41,7 @@ function initSelect(){
     
     for(var i = 0 ; i < serviceData.length ; i++){
         if(type == serviceData[i].id){
-            contentId = serviceData[i].list[0].id;
+            contentId = serviceData[i].class[0].id;
             console.log(contentId)
         }
     }
@@ -116,7 +102,7 @@ function initJQSelect(){
         type = $(this).attr('data-id');
         for(var i = 0 ; i < serviceData.length ; i++){
             if(type == serviceData[i].id){
-                contentId = serviceData[i].list[0].id;
+                contentId = serviceData[i].class[0].id;
                 console.log(contentId)
             }
         }
