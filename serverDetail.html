@@ -134,6 +134,7 @@
             {{/each}}
         </div>
         <div class="tabWrapContentDetail" >
+            {{if !detail.subTitle && !detail.info}}
             <div class="tableWrap">
                 <div class="lineWrap">
                     <div class="lineTitle">政策名称</div>
@@ -170,6 +171,17 @@
                     </div>
                 </div>
             </div>
+            {{/if}}
+            {{if detail.subTitle}}
+                <div class="detailSubTitle" style="font-weight:bold;margin-bottom:10px;font-size:14px;">{{detail.subTitle}}</div>
+                <div>{{#detail.other}} </div> 
+            {{/if}}
+            {{if detail.info}}
+                <div style="line-height:25px;">
+                    {{#detail.info}}
+                </div>
+                
+            {{/if}}
         </div>
     </script>
     <script src="static/js/serverDetail.js"></script>
