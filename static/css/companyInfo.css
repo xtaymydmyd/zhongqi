@@ -94,7 +94,7 @@
     .dynamicContainer .tabWrapContent .companyBaseInfo .companyTabContainer {
       background: white; }
       .dynamicContainer .tabWrapContent .companyBaseInfo .companyTabContainer .companyTabContent {
-        padding: 40px 50px;
+        padding: 20px 50px 40px 50px;
         width: 100%; }
         .dynamicContainer .tabWrapContent .companyBaseInfo .companyTabContainer .companyTabContent .briefWrap .briefWrapText {
           color: #333;
@@ -328,5 +328,14 @@
             font-size: 14px;
             color: #666666;
             float: left; }
+  .dynamicContainer .emptyWrap {
+    text-align: center;
+    color: #efefef;
+    font-size: 16px;
+    margin-top: 10%; }
+    .dynamicContainer .emptyWrap img {
+      width: 200px; }
+    .dynamicContainer .emptyWrap .emptyText {
+      margin-top: 10px; }
 
 /*# sourceMappingURL=companyInfo.css.map */

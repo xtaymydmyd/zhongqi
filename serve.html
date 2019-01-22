@@ -148,11 +148,19 @@
                         <div class="companyTabContainer" data-list-id="{{info.id}}" style="display:inline-block;">
                             <div class="companyTabContent">
                                 {{if info.list}}
+                                    {{if info.list.length == 0}}
+                                        <div class="emptyWrap">
+                                            <img src="static/image/empty.png" alt="">
+                                            <div class="emptyText">暂无数据</div>
+                                        </div>
+                                        
+                                    {{/if}}
                                     {{each info.list blockItem m}}
                                     <a class="list" href="serverDetail.html?type={{item.id}}&class={{info.id}}&id={{blockItem.id}}">
                                         <div class="listLeft text-ellipsis">{{blockItem.name}}</div>
                                         <div class="listRight">{{blockItem.applyTime}}</div>
                                     </a>
+                                    
                                     {{/each}}
                                 {{/if}}
                                 {{if !info.list}}
