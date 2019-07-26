@@ -54,7 +54,7 @@
           font-size: 14px;
           margin-right: 10px; }
     .IndexOurService .serviceWrap .serviceContainer .serviceBlock {
-      width: calc((100% - 46px) / 3);
+      width: calc((100% - 50px) / 3);
       display: inline-block;
       float: left;
       background: white;
@@ -80,7 +80,7 @@
       left: calc(50% - 18px);
       border-bottom: 3px solid #cc0715; }
     .IndexOurService .serviceWrap .serviceContainer .wrap {
-      width: calc((100% - 46px) / 3);
+      width: calc((100% - 50px) / 3);
       margin: 0px 23px 23px 0px;
       overflow: hidden;
       float: left;
@@ -107,7 +107,7 @@
   .technologyNews .technologyWrap .technologyContainer {
     overflow: hidden; }
     .technologyNews .technologyWrap .technologyContainer .technologyContainerWrap {
-      width: calc((100% - 46px) / 3);
+      width: calc((100% - 50px) / 3);
       margin-right: 23px;
       float: left; }
       .technologyNews .technologyWrap .technologyContainer .technologyContainerWrap .technologyContainerTitle {

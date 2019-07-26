@@ -64,7 +64,7 @@
                 }
             }
             .serviceBlock{
-                width: calc((100% - 46px) / 3);
+                width: calc((100% - 50px) / 3);
                 display: inline-block;
                 float: left;
                 background: white;
@@ -94,7 +94,7 @@
                 border-bottom: 3px solid #cc0715;
             }
             .wrap{
-                width:calc((100% - 46px) / 3);
+                width:calc((100% - 50px) / 3);
                 margin:0px 23px 23px 0px;
                 overflow: hidden;
                 float: left;
@@ -132,7 +132,7 @@
         .technologyContainer{
             overflow:hidden;
             .technologyContainerWrap{
-                width:calc((100% - 46px) / 3);
+                width:calc((100% - 50px) / 3);
                 margin-right:23px;
                 float:left;
                 .technologyContainerTitle{
